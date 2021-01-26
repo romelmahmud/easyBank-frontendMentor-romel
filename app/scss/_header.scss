@@ -16,10 +16,23 @@
       width: 26px;
       height: 2px;
       background-color: $darkBlue;
+      transition: all 0.3s ease-in-out;
+      transform-origin: 3px 1.5px;
 
       &:not(:last-child) {
         //not selecting last element
-        margin-bottom: 3px;
+        margin-bottom: 5px;
+      }
+    }
+    &.open {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
       }
     }
   }
