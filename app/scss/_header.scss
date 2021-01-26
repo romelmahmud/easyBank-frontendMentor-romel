@@ -1,0 +1,31 @@
+.header {
+  nav {
+    padding: 24px;
+  }
+  &__logo {
+  }
+
+  //mobile menu(hamburger)
+  &__menu {
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $darkBlue;
+
+      &:not(:last-child) {
+        //not selecting last element
+        margin-bottom: 3px;
+      }
+    }
+  }
+  &__links {
+    a {
+      color: $grayishBlue;
+      font-size: $font-sm;
+    }
+  }
+  &__cta {
+    font-size: $font-sm;
+  }
+}
