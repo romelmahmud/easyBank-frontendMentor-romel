@@ -3,6 +3,10 @@
     padding: 24px;
   }
   &__logo {
+    img {
+      width: 8.8125rem;
+      height: 1.375rem;
+    }
   }
 
   //mobile menu(hamburger)
@@ -23,6 +27,20 @@
     a {
       color: $grayishBlue;
       font-size: $font-sm;
+      padding-bottom: 2.5em;
+      transition: all 0.2s ease-in-out;
+
+      &:not(:last-child) {
+        // not selecting last element
+        margin-right: 2.2857em;
+      }
+
+      &:hover {
+        color: $darkBlue;
+        border-bottom: 5px solid;
+        border-image-source: linear-gradient(to right, $limeGreen, $brightCyan);
+        border-image-slice: 1;
+      }
     }
   }
   &__cta {

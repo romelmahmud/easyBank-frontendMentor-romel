@@ -52,15 +52,21 @@ a:hover {
 }
 
 .button {
-  padding: 1em 1.875em;
-  border-radius: 50px;
+  padding: 0.875em 2.1875em;
   border: none;
   outline: none;
+  border-radius: 50px;
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
   color: white;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.75;
 }
 
 @media (max-width: 63.9375em) {
@@ -79,6 +85,11 @@ a:hover {
   padding: 24px;
 }
 
+.header__logo img {
+  width: 8.8125rem;
+  height: 1.375rem;
+}
+
 .header__menu > span {
   display: block;
   width: 26px;
@@ -93,6 +104,20 @@ a:hover {
 .header__links a {
   color: #9698a6;
   font-size: 0.875rem;
+  padding-bottom: 2.5em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 2.2857em;
+}
+
+.header__links a:hover {
+  color: #2d314d;
+  border-bottom: 5px solid;
+  border-image-source: linear-gradient(to right, #31d35c, #2bb7da);
+  border-image-slice: 1;
 }
 
 .header__cta {

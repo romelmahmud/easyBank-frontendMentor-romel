@@ -44,14 +44,19 @@ a:hover {
 // button
 
 .button {
-  padding: 1em 1.875em;
-  border-radius: 50px;
+  padding: 0.875em 2.1875em;
   border: none;
+
   outline: none;
+  border-radius: 50px;
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
   color: $white;
   background: linear-gradient(to right, $limeGreen, $brightCyan);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.75;
+  }
 }
 // visibility
 .hide-for-mobile {
