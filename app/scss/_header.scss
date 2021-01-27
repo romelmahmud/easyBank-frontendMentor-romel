@@ -1,6 +1,6 @@
 .header {
   &.open {
-    .header__menu {
+    .header__toggle {
       > span:first-child {
         transform: rotate(45deg);
       }
@@ -36,7 +36,7 @@
   }
 
   //mobile menu(hamburger)
-  &__menu {
+  &__toggle {
     > span {
       display: block;
       width: 26px;
@@ -68,6 +68,32 @@
         border-bottom: 5px solid;
         border-image-source: linear-gradient(to right, $limeGreen, $brightCyan);
         border-image-slice: 1;
+      }
+    }
+  }
+
+  &__menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background: $white;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2em 0;
+    border-radius: 5px;
+
+    a {
+      color: $darkBlue;
+      display: block;
+      padding: 0.75em;
+      font-weight: 400;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $grayishBlue;
       }
     }
   }
