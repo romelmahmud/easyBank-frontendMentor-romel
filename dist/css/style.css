@@ -100,6 +100,17 @@ a:hover {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,6 +152,7 @@ a:hover {
   background: linear-gradient(to right, #31d35c, #2bb7da);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 
 .button:hover {
@@ -261,5 +273,45 @@ a:hover {
 
 .header__cta {
   font-size: 0.875rem;
+}
+
+.hero__image {
+  z-index: -1;
+  position: relative;
+  background-image: url(/images/bg-intro-mobile.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 17.5rem;
+  margin-bottom: 3rem;
+}
+
+.hero__image::before {
+  content: "";
+  position: absolute;
+  background-image: url(/images/image-mockups.png);
+  background-size: 92%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__text {
+  text-align: center;
+  margin-bottom: 5.375rem;
+}
+
+.hero__text h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #2d314d;
+  line-height: 1.2;
+  margin-bottom: 1.75rem;
+}
+
+.hero__text p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 /*# sourceMappingURL=style.css.map */

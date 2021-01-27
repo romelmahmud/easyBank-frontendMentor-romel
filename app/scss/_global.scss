@@ -29,6 +29,17 @@ a:hover {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
 // flexBox
 
 .flex {
@@ -63,6 +74,7 @@ a:hover {
   color: $white;
   background: linear-gradient(to right, $limeGreen, $brightCyan);
   transition: all 0.3s ease-in-out;
+  display: inline-block;
   &:hover {
     opacity: 0.75;
   }
