@@ -1,4 +1,30 @@
 .header {
+  &.open {
+    .header__menu {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 4.7rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-image: linear-gradient($darkBlue, transparent);
+  }
+
   nav {
     padding: 24px;
   }
@@ -22,17 +48,6 @@
       &:not(:last-child) {
         //not selecting last element
         margin-bottom: 5px;
-      }
-    }
-    &.open {
-      > span:first-child {
-        transform: rotate(45deg);
-      }
-      > span:nth-child(2) {
-        opacity: 0;
-      }
-      > span:last-child {
-        transform: rotate(-45deg);
       }
     }
   }
