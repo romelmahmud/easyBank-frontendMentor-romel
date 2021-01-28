@@ -17,9 +17,11 @@
     padding-bottom: 1.5rem;
     position: relative;
     background-color: $white;
+    z-index: 10;
   }
 
   .overlay {
+    z-index: 5;
     visibility: hidden;
     opacity: 0;
     position: fixed;
@@ -58,7 +60,7 @@
     a {
       color: $grayishBlue;
       font-size: $font-sm;
-      padding-bottom: 2.5em;
+      padding-bottom: 2em;
       transition: all 0.2s ease-in-out;
 
       &:not(:last-child) {
@@ -88,6 +90,7 @@
     text-align: center;
     padding: 2em;
     border-radius: 5px;
+    z-index: 5;
 
     a {
       color: $darkBlue;
