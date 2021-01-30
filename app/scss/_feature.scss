@@ -1,0 +1,104 @@
+.feature {
+  background-color: $lightGrayishBlue;
+  padding-top: 4.375rem;
+  padding-bottom: 4.25rem;
+  text-align: center;
+
+  @include breakpoint-up(medium) {
+    text-align: left;
+    padding-top: 6.75rem;
+    padding-bottom: 6.375rem;
+  }
+  &__content {
+  }
+  &__intro {
+    margin-bottom: 3.75rem;
+    @include breakpoint-up(medium) {
+      text-align: center;
+    }
+
+    @include breakpoint-up(large) {
+      text-align: left;
+      max-width: 60%;
+      margin-bottom: 4.75rem;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+
+      @include breakpoint-up(large) {
+        margin-bottom: 2.125rem;
+      }
+    }
+
+    p {
+      font-size: 0.875rem;
+      @include breakpoint-up(medium) {
+        font-size: 1.0625rem;
+        line-height: 1.5;
+      }
+    }
+  }
+  &__cards {
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    padding-right: 1.875rem;
+    margin-bottom: 2.25rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include breakpoint-up(medium) {
+      flex: 0 0 50%;
+      &:nth-child(2) {
+        padding-right: 0;
+      }
+      &:nth-child(3) {
+        margin-bottom: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+        margin-bottom: 0;
+      }
+    }
+    @include breakpoint-up(large) {
+      flex: 1;
+      margin-bottom: 0;
+      &:nth-child(2) {
+        padding-right: 2rem;
+      }
+    }
+  }
+  &__icon {
+    max-width: 4.5rem;
+    margin: 0 auto;
+    @include breakpoint-up(medium) {
+      margin: 0;
+    }
+  }
+  &__title {
+    margin: 1.875rem 0 1.56rem 0;
+    font-weight: 300;
+    color: $darkBlue;
+    line-height: 1.2;
+    font-size: 1.1875rem;
+    @include breakpoint-up(large) {
+      margin: 2.5rem 0 1.875rem 0;
+      font-size: 1.375rem;
+    }
+  }
+  &__body {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+
+    @include breakpoint-up(medium) {
+      font-size: 1rem;
+    }
+  }
+}

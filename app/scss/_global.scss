@@ -29,10 +29,30 @@ a:hover {
   text-decoration: none;
 }
 
+// typography
+
 h1,
 h2,
 h3 {
   margin-top: 0;
+  font-weight: 300;
+  color: $darkBlue;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1.75rem;
+  @include breakpoint-up(large) {
+    font-size: $font-xlg;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  @include breakpoint-up(large) {
+    font-size: 2.25rem;
+  }
 }
 
 img {
