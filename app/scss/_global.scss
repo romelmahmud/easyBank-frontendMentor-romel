@@ -2,15 +2,13 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
-html {
-  scroll-behavior: smooth;
 }
 
 body {

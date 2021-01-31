@@ -4,8 +4,15 @@ const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay')
 const menu = document.querySelector('.header__menu')
 const body = document.querySelector('body');
+const home = document.querySelector('.home');
+const about = document.querySelector('.about');
+const contact = document.querySelector('.contact');
+const blog = document.querySelector('.blog');
+const career = document.querySelector('.career');
 
-burgerMenu.addEventListener('click', function(){
+
+
+const toggle = () => {
    if (header.classList.contains('open')) {
       body.classList.remove('no-scroll');
       header.classList.remove('open');
@@ -21,5 +28,16 @@ burgerMenu.addEventListener('click', function(){
       overlay.classList.add('fade-in');
       menu.classList.remove('fade-out');
       menu.classList.add('fade-in');
-      }
-});
+   }
+   return toggle;
+};
+
+burgerMenu.addEventListener('click', toggle());
+
+home.addEventListener('click', toggle())
+about.addEventListener('click', toggle())
+contact.addEventListener('click', toggle())
+blog.addEventListener('click', toggle())
+career.addEventListener('click', toggle())
+
+
