@@ -17,6 +17,7 @@ body {
   font-size: $font-md;
   color: $grayishBlue;
   line-height: 1.3;
+  overflow-x: hidden;
 
   &.no-scroll {
     overflow: hidden;

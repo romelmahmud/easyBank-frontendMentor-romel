@@ -1,0 +1,53 @@
+.footer {
+  background-color: $darkBlue;
+  color: $white;
+  padding: 3rem 4.875rem;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__logo {
+    width: 8.75rem;
+    height: 1.25rem;
+    margin: 0 auto;
+  }
+  &__socialIcons {
+    max-width: 280px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+    transition: all 300ms ease-in-out;
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+      &:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+    }
+  }
+
+  &__links {
+    a {
+      display: block;
+      color: $white;
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        color: $grayishBlue;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 2rem;
+    p {
+      margin-bottom: 0;
+      margin-top: 1.5rem;
+      font-size: $font-sm;
+      color: $grayishBlue;
+    }
+  }
+}
