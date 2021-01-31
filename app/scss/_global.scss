@@ -9,6 +9,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   padding: 0;
